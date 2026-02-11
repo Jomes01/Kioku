@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Kioku",
+    "slug": "kioku",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./Kioku_Logo.png",
+    "splash": {
+      "image": "./Kioku_Logo.png",
+      "backgroundColor": "#000000",
+      "resizeMode": "contain"
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/Azonix.otf"],
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "Azonix",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/Azonix.otf",
+                    "weight": 400,
+                    "style": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      ["expo-notifications", { "color": "#1A73E8", "sounds": [] }]
+    ],
+    "android": {
+      "package": "com.kioku.app",
+      "permissions": []
+    }
+  }
+}
