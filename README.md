@@ -32,14 +32,24 @@ npx expo install expo-dev-client
 npx expo run:android
 ```
 
-### Build APK
+### Build a standalone APK (install on phone, no dev server)
 
-```bash
-npx expo prebuild --clean
-npx expo run:android
-```
+The development build APK shows a “connect to server” screen. To get an APK that runs on its own:
 
-Or use [EAS Build](https://docs.expo.dev/build/introduction/) for production APKs.
+1. **Install EAS CLI** (if not already):  
+   `npm install`
+
+2. **Log in to Expo** (free account):  
+   `npx eas login`
+
+3. **Build the APK**:  
+   `npm run build:apk`  
+   or:  
+   `npx eas build --platform android --profile production`
+
+4. When the build finishes, open the link from the terminal or go to [expo.dev](https://expo.dev) → your project → Builds. Download the **APK** and install it on your phone.
+
+This build is a **production** build: your app opens directly (no dev server, no QR code). Use the same app for development; use this APK for daily use or sharing.
 
 ## Project structure
 

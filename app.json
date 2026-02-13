@@ -15,7 +15,9 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/Azonix.otf"],
+          "fonts": [
+            "./assets/fonts/Azonix.otf"
+          ],
           "android": {
             "fonts": [
               {
@@ -32,11 +34,22 @@
           }
         }
       ],
-      ["expo-notifications", { "color": "#1A73E8", "sounds": [] }]
+      [
+        "expo-notifications",
+        {
+          "color": "#1A73E8",
+          "sounds": []
+        }
+      ]
     ],
     "android": {
       "package": "com.kioku.app",
       "permissions": []
+    },
+    "extra": {
+      "eas": {
+        "projectId": "edac85fc-fa5f-4d51-8afc-587d58b30afd"
+      }
     }
   }
 }
